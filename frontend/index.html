@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HelpDesk</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<h1>🛠 HelpDesk</h1>
+<p>Sistema de gerenciamento de chamados</p>
+</header>
+
+<section class="form-chamado">
+
+<input type="text" id="titulo" placeholder="Título do chamado">
+
+<textarea id="descricao" placeholder="Descreva o problema"></textarea>
+
+<button onclick="criarChamado()">Criar Chamado</button>
+
+</section>
+
+<section class="chamados">
+
+<h2>Chamados</h2>
+
+<div id="mensagem"></div>
+
+<div id="listaChamados" class="grid"></div>
+
+</section>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
